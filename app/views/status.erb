@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Results</title>
+  <!-- links to CSS stylesheet in the public directory -->
+  <link rel="stylesheet" href="/css/index.css" >
+</head>
+<body> 
+
+  <div class="container">
+      <div class="main">
+   
+        <div class="primary">
+            <% num_1 = @selection1.randomizer %>
+            <img src="<%= num_1[0][1]%>"><br> 
+            <%= num_1[0][0]%><br> 
+        </div>
+        <div class="secondary">
+            <% num_2 = @selection1.randomizer %>
+            <img src="<%= num_2[1][1] %>"> <br>
+            <%= num_2[1][0] %> <br>
+        </div>
+        <div class="melee">
+            <% num_3 = @selection1.randomizer %>
+           <img src="<%= num_3[2][1] %>"><br>
+           <%= num_3[2][0] %><br>
+        </div>
+        </div><br>
+        <div class="bottom">
+        <div class="pda1">
+            <% num_4 = @selection1.randomizer %>
+            <img src="<%= num_4[3][1] %>"> <br>
+            <%= num_4[3][0] %> 
+        </div>
+
+            <a href="/">Randomize again</a>
+
+        <div class="pda2">
+            <% num_5 = @selection1.randomizer %>
+           <img src="<%= num_5[4][1] %>"><br>
+           <%= num_5[4][0] %><br>
+        </div> 
+        </div>
+  </div>
+
+</body>
+</html> 
